@@ -1,0 +1,70 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Light {
+    +SwitchOn()
+    +SwitchOff()
+    +isOn():boolean
+}
+
+class LightSalon extends Light {
+
+}
+
+class LightCuisine extends Light {
+
+}
+
+class LightChambre extends Light {
+
+}
+
+class RemoteController {
+private Dictionnary<String, ICommand>commands
+public void addCommand(String key, ICommand command)
+public void execute(String key)
+
+}
+
+class LightSalonOn implements ICommand {
+    private Light light
+    public LightSalonOn(Light, light)
+
+}
+
+class LightSalonOff implements ICommand {
+    private Light light
+    public LightSalonOff(Light, light)
+
+}
+
+class LightCuisineOn implements ICommand {
+    private Light light
+    public LightCuisineOn(Light, light)
+
+}
+
+class LightCuisineOff implements ICommand {
+    private Light light
+    public LightCuisineOff(Light, light)
+}
+
+class LightChambreOn implements ICommand {
+    private Light light
+    public LightChambreOn(Light, light)
+}
+
+class LightChambreOff implements ICommand {
+    private Light light
+    public LightChambreOff(Light, light)
+}
+
+interface ICommand {
+    public void execute()
+}
+
+
+
+
+
+@enduml
