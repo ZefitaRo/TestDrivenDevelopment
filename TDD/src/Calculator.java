@@ -1,14 +1,17 @@
-import java.util.stream.DoubleStream;
-
 public class Calculator {
-
-    static double add(double... operands) {
-        return DoubleStream.of(operands)
-                .sum();
+    public double addition(double a, double b) {
+        return a + b;
     }
 
-    static double multiply(double... operands) {
-        return DoubleStream.of(operands)
-                .reduce(1, (a, b) -> a * b);
+    public double soustraction(double a, double b) {
+        return 0.0;
+    }
+
+    public double multiplication(double a, double b) {
+        return 0.0;
+    }
+
+    public double division(double a, double b) {
+        return 0.0;
     }
 }

@@ -5,10 +5,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class CalculatorTest {
 
     @Test
-    void add() {
+    public void additionTest() {
+        Calculator calc = new Calculator();
+        assertEquals(9.5, calc.addition(4.0, 5.5));
     }
 
-    @Test
-    void multiply() {
-    }
 }
